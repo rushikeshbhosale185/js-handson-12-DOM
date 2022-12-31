@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document Object Model</title>
+</head>
+<body>
+    <h1>Js Handson - 12 [DOM]</h1>
+    <br>
+    <pre><p>Q.1) Write the code to access element which is having id as "text".</p></pre>
+    <pre>Ans: <h3>
+                        const doc = document.getElementById("text");
+    </h3></pre>
+    <pre><p>Q.2) Write the code to access element which is having tag as "h1"?</p></pre>
+    <pre>Ans: <h3>
+                        const h1 = document.getElementsByTagName("h1");
+                        h1[0].innerHTML;
+    </h3></pre>
+    <pre><p>Q.3) Write the code to access element which is having class as "box"?</p></pre>
+    <pre>Ans: <h3>
+                        const box = document.getElementsByTagName("box");
+                        box[0].innerHTML;
+    </h3></pre>
+    <pre><p>Q.4) Write the code to access element which is having class as "box"?</p></pre>
+    <pre>Ans: </pre><h3>
+        <div id="child">Hello _ _ _ _ _ _</div><br>
+        <button onclick="btnClick()" class="click">Do Not Click Otherwise ...</button>
+    </h3>
+    <p>Q.5) Create three cards on HTML page and arrange them using flex property in row or horizontal direction and also create button at the bottom named "Change Flex direction". <br> When user clicks on this button, the cards arrangement should be changed to vertical direction.</p>
+    <pre>Ans: </pre><h3>
+        <div id="parent">
+            <div class="child">box-01</div><br>
+            <div class="child">box-02</div><br>
+            <div class="child">box-03</div><br>
+        </div><br><br>
+        <button onclick="vertical()" id="column">Vertical</button>
+        <button onclick="horizontal()" id="row">Horizontal</button>
+    </h3>
+    <pre><p>Q.6) What is the difference between window vs document?</p></pre>
+    <pre>Ans: <h3>
+            <b><i>Window Object: </i></b> The window object is the topmost object of the DOM hierarchy. 
+                        It represents a browser window or frame that displays the contents of the webpage. <br><br>
+            <b><i> Document Object: </i></b> The document object represent a web page that is loaded in the browser. 
+                        By accessing the document object, we can access the element in the HTML page.
+    </h3></pre><br>
+    <p>Q.7) Add one style attribute and give text color as red and id attribute and give the id value as "heading" in the above  <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; given h1 tag using DOM functions.</p>
+    <pre>Ans: </pre><h3>
+        <div id="heading"><h1> Hello </h1></div><br>
+        <button onclick="changeColor()" class="click">Color Change</button>
+    </h3>
+    <p>Q.8) Create an HTML page having content as Hello world and a button named Replace Text. When user will click on this button page content <br> should be changed to "Welcome to Elevation academy.</p>
+    <pre>Ans: </pre><h3>
+        <div id="changeHeading"><h1> Hello </h1></div><br>
+        <button onclick="changehead()" class="click">Change Text</button>
+    </h3>
+    <pre><p>Q.9) Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep updating every second.</p></pre>
+    <pre>Ans: </pre><h3>
+        <h1></h1><div id="time"> 
+            <h3>Time: </h3>
+            <div class="flexClock">
+                <span class="hrs"></span>
+                <span class="mins"></span>
+                <span class="secs"></span>
+                <span class="meridian"></span>
+            </div>
+        </div></h1><br>
+    </h3>
+    <pre><p>Q.8) Create a select drop down for selecting 
+        Year 20-21, 21-22 etc. <br> Print the item text selected Select one from the given Options:</p></pre><br>
+        
+    <h3>Ans:</h3>
+    <div class="main">
+        <p>Select one from the given Options:</p>
+            <select name="" id="text1">
+                <option value="20-21">Year 20-21</option>
+                <option value="21-22">Year 21-22</option>
+                <option value="22-23">Year 22-23</option>
+                <option value="23-24">Year 23-24</option>
+                <option value="24-25">Year 24-25</option>
+                <option value="25-26">Year 25-26</option>
+            </select> <br><br><br>
+            <button onclick="getOption()" class="btn">Click here</button><br><br><br>
+        <p id="output1">The value of the selcted Option is : &nbsp;&nbsp;&nbsp;<span id="output"></span></p><br><br><br>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

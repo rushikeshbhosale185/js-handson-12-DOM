@@ -1,0 +1,129 @@
+body{
+    background-color: lavender;
+    color: red;
+    font-size: 1rem;
+    font-family: cursive;
+}
+h1{
+    text-align: center
+}
+h3{
+    /* background-color: black; */
+    color: green;
+}
+
+i{
+    color: rgb(154, 15, 5);
+}
+
+.click{
+    padding: 1rem;
+    background-color: darkgreen;
+    border-radius: 0.8rem;
+    color: cyan;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 45vw;
+}
+.click:hover{
+    cursor: pointer;
+    color: springgreen;
+    background-color: black;
+    padding: 1.1rem;
+    font-size: x-large;
+    font-weight: bold;
+    border-radius: 12px;
+}
+#parent{
+    display: flex;
+    column-gap: 2rem;
+}
+.child{
+    margin-left: 5rem;
+    height: 5rem;
+    width: 7rem;
+    color: white;
+    background-color: deeppink;
+    border: 2px solid lime;
+    border-radius: 12px;
+    padding: 5px 15px;
+    box-sizing: border-box;
+}
+#row{
+    background-color: antiquewhite;
+    color: red;
+    padding: 10px 35px;
+    border-radius: 10px;
+    margin-left: 4rem;
+    border: 2px solid blue;
+}
+#row:hover{
+    cursor: pointer;
+    padding: 15px 42px;
+}
+#column{
+    background-color: antiquewhite;
+    color: darkgreen;
+    padding: 10px 35px;
+    border-radius: 10px;
+    margin-left: 4rem;
+    border: 2px solid blue;
+}
+#column:hover{
+    cursor: pointer;
+    padding: 15px 42px;
+}
+
+#heading{
+    text-align: center;
+    font-size: x-large;
+}
+
+#changeHeading{
+    text-align: center;
+    font-size: x-large;
+    color: darkblue;
+}
+
+.flexClock{
+    font-size: 35px;
+    position: relative;
+    left: 100px;
+    bottom: 50px;
+    color: rgb(5, 70, 5);
+}
+.main{
+    margin-left: 10vw;
+    height: 200px;
+    width: 500px;
+    border: 2px dashed aquamarine;
+    background-color: darkgrey;
+    color: crimson;
+    padding: 12px 45px;
+}
+
+select{
+    padding: 10px;
+    border-radius: 12px;
+    color: coral;
+}
+
+.btn{
+    color: blue;
+    padding: 8px 20px;
+    border-radius: 12px;
+}
+.btn:hover{
+    cursor: pointer;
+}
+#output{
+    color: fuchsia;
+    font-size: xx-large;
+    word-spacing: 15px;
+}
+#output1{
+    background-color: beige;
+    text-align: center;
+    border: 4px dotted lime;
+    border-radius: 12px;
+}
+
